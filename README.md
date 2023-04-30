@@ -20,7 +20,7 @@ JWT <br>
 Docker Desktop <br>
 Docker Hub <br>
 Github Actions <br>
-Yandex cloud
+Yandex cloud <br>
 
 ---
 
