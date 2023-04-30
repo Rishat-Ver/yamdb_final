@@ -1,3 +1,8 @@
+from api.filters import TitlesFilter
+from api.mixins import WithoutPatchPutViewSet
+from api.permissions import IsAdminOnly, IsAdminRedOnly, IsSuperUserOrReadOnly
+from api.serializers import (GetTokenSerializer, NotAdminSerializer,
+                             SignUpSerializer, UsersSerializer)
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage
 from django.db.models import Avg
@@ -10,25 +15,11 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
-
-from .serializers import (
-    CategoriesSerializer,
-    CommentSerializer,
-    GenreSerializer,
-    ReviewSerializer,
-    TitlesReadSerializer,
-    TitlesWriteSerializer,
-)
-from api.filters import TitlesFilter
-from api.mixins import WithoutPatchPutViewSet
-from api.permissions import IsAdminOnly, IsAdminRedOnly, IsSuperUserOrReadOnly
-from api.serializers import (
-    GetTokenSerializer,
-    NotAdminSerializer,
-    SignUpSerializer,
-    UsersSerializer,
-)
 from reviews.models import Category, Genre, Review, Title, User
+
+from .serializers import (CategoriesSerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          TitlesReadSerializer, TitlesWriteSerializer)
 
 
 class UsersViewSet(viewsets.ModelViewSet):
