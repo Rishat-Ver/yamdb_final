@@ -1,12 +1,12 @@
 # Проект **Yamdb_final**
 ![example workflow](https://github.com/Rishat-Ver/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-## **Адреса для проверки работы проекта:**
+### **URL проекта Yamdb_final:**
 http://84.252.143.251/admin <br>
-http://84.252.143.251/api/v1/users <br>
-http://84.252.143.251/api/v1/categories <br>
-http://84.252.143.251/redoc/<br>
-http://84.252.143.251/api/v1/genres
+http://84.252.143.251/api/v1/ <br>
+http://84.252.143.251/redoc/
+
+---
 
 ### **Описание проекта:**
 *Проект Yamdb_final собирает отзывы пользователей на произведения. Сами произведения в Yamdb_final не хранятся, здесь нельзя посмотреть фильм или послушать музыку.*
@@ -24,7 +24,6 @@ Python 3.7 <br>
 Django 3.2 <br>
 DRF 3.12.4 <br>
 JWT <br>
-Docker Desktop <br>
 Docker Hub <br>
 Github Actions <br>
 Yandex cloud 
@@ -54,6 +53,9 @@ apt install docker.io
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo systemctl stop nginx
+git add .
+git commit -m ""
+git push
 
 ```
 
@@ -68,18 +70,37 @@ POSTGRES_USER=postgres
 POSTGRES_PASSWORD=rishik
 DB_HOST=db
 DB_PORT=5432
-SECRET_KEY
+SECRET_KEY='++s4p8%m9_hylnw*(+$f4+n46)^01_)ibpqt3-j_-!@srfg63)'
+
+```
+---
+### **Actions secrets**
+
+```
+DB_ENGINE - django.db.backends.postgresql
+DB_HOST - db
+DB_NAME - postgres 
+DB_PORT - 5432
+DOCKER_PASSWORD - пароль пользователя в DockerHub
+DOCKER_USERNAME - имя пользователя в DockerHub
+HOST - ip-адрес сервера
+POSTGRES_PASSWORD - rishik
+POSTGRES_USER - postgres
+SECRET_KEY - секретный ключ приложения django
+SSH_KEY - SSH ключ (cat ~/.ssh/id_rsa.pub)
+TELEGRAM_TO - id своего телеграм-аккаунта
+TELEGRAM_TOKEN - токен бота
+USER - пользователь
 
 ```
 
 ---
 
 ### **Документация API YaMDb**
-Документация: http://localhost/redoc/
+Документация: http://84.252.143.251/redoc/
 
 ---
 
-[example branch parameter](https://github.com/Rishat-Ver/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg) <br>
 Данный проект , является совместной работой трех начинающих разроботчиков (Ришат , Даша , Сергей) <br>
 Он сделан в рамках обучения на курсе Python-рфзроботчик Яндекс-Практикума <br>
 На данный момент по работе с настройкой сервера , докера и т п работал Ришат Вергасов <br>
