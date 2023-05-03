@@ -4,7 +4,7 @@
 ### **URL проекта Yamdb_final:**
 http://84.252.143.251/admin <br>
 http://84.252.143.251/api/v1/ <br>
-http://84.252.143.251/redoc/
+http://84.252.143.251/redoc/ <br>
 
 ---
 
