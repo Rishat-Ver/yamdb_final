@@ -26,7 +26,7 @@ DRF 3.12.4 <br>
 JWT <br>
 Docker Hub <br>
 Github Actions <br>
-Yandex cloud 
+Yandex cloud <br>
 
 ---
 
